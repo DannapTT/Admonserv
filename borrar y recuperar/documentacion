@@ -1,0 +1,12 @@
+El script mueve un archivo a un directorio temporal y luego lo devuelve.
+
+Funcionamiento:
+    -Creación de directorio temporal: Se genera un directorio con el formato:
+            °temp-nombreArchivo
+    -El archivo es trasladado al directorio temporal
+    -Restauración del archivo:
+            °Se mueve nuevamente a su ubicación original
+              
+Ejemplo de uso:
+
+bash script.sh archivo.txt
