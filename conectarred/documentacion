@@ -1,1 +1,31 @@
+Este script permite gestionar la configuración de red de una interfaz de red
+Permite activar o desactivar una interfaz, establecer una conexión por cable o WiFi y configurar la dirección IP mediante DHCP o una IP fija
 
+Funcionamiento
+        Listado de interfaces de red:
+                 - Se muestra una lista de interfaces de red disponibles
+        Selección de interfaz:
+                - Se ingresa el nombre de la interfaz que se quiere modificar
+        Cambio de estado de la interfaz:
+                 - Si la interfaz está activa, se desactiva, y viceversa
+        Selección del tipo de conexión:
+                 - Si se elige WiFi, verifica redes disponibles y se solicita el nombre y contraseña para conectarse
+                 - Si se elige una conexión cableada, se deja la interfaz activa
+        Configuración de red:
+                 - Se puede configurar la red con DHCP
+                 - Se puede ingresar manualmente una dirección IP, máscara de red y puerta de enlace
+
+Dependencias
+Para que el script funcione correctamente, es necesario contar con los siguientes comandos disponibles:
+- ip
+- iwlist
+- wpa_supplicant
+- dhclient
+- wpa_passphrase
+- sudo
+
+Uso
+Ejecutar el script con permisos de superusuario:
+bash
+sudo ./script.sh
+Luego, seguir las instrucciones que van apareciendo para configurar la red según las preferencias
